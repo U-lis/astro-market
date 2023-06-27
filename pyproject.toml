@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "astro-market"
+version = "0.1.0"
+description = "Astro after market notifier"
+authors = ["U-lis <ulismoon@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "astro_market"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0.17"
+psycopg2-binary = "^2.9.6"
+fastapi = "^0.98.0"
+mangum = "^0.17.0"
+boto3 = "^1.26.161"
+aws-cdk-lib = "^2.85.0"
+constructs = "^10.2.61"
+
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.11.1"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
